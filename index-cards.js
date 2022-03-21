@@ -64,3 +64,17 @@ const historyOfEverything = new Book('Bill Bryson', 'A short story of  Nerly Eve
 
 historyOfEverything.tooggleChekedout();
 console.log(historyOfEverything._isChekedout);
+historyOfEverything.addRating(4);
+historyOfEverything.addRating(5);
+historyOfEverything.addRating(5);
+
+console.log(historyOfEverything.getAverageRating());
+
+const speed = new Movie('Jan de Bond','Speed', 116);
+speed.tooggleChekedout();
+console.log(speed.isChekedout);
+speed.addRating(1);
+speed.addRating(1);
+speed.addRating(5);
+
+console.log(speed.getAverageRating());
